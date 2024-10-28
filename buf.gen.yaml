@@ -8,9 +8,9 @@ plugins:
   - remote: buf.build/protocolbuffers/python:v28.3
     out: src/
 inputs:
-  - directory: google
+  - directory: googleapis
     paths:
-      - google/type
-      - google/api/field_behavior.proto
-      - google/api/http.proto
-      - google/geo/type
+      - googleapis/google/type
+      - googleapis/google/api/field_behavior.proto
+      - googleapis/google/api/http.proto
+      - googleapis/google/geo/type
