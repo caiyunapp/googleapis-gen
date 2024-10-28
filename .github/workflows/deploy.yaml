@@ -1,9 +1,8 @@
 name: publish
 
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  release:
+    types: [published]
 
 jobs:
   pypi-publish:
@@ -27,5 +26,9 @@ jobs:
         with:
           enable-cache: true
 
-      - run: uv build
-      - run: uv publish
+      - name: Install dependencies
+        run: uv build
+
+      - name: Publish to PyPI
+        if : github.event_name == 'push' && github.ref_type == 'tag'
+        run: uv publish

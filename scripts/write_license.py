@@ -24,11 +24,11 @@ directory = "src/"
 # Traverse through the directory to find _pb2.py files
 for root, _, files in os.walk(directory):
     for file in files:
-        if file.endswith('_pb2.py'):
+        if file.endswith("_pb2.py"):
             file_path = os.path.join(root, file)
 
             # Read the existing file content
-            with open(file_path, 'r', encoding='utf-8') as f:
+            with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read()
 
             # Skip files that already have the copyright notice
@@ -37,7 +37,7 @@ for root, _, files in os.walk(directory):
                 continue
 
             # Add the copyright notice to the beginning of the file
-            with open(file_path, 'w', encoding='utf-8') as f:
+            with open(file_path, "w", encoding="utf-8") as f:
                 f.write(copyright_notice + content)
 
             print(f"Added copyright notice: {file_path}")
