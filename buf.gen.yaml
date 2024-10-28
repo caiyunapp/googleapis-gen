@@ -1,0 +1,8 @@
+version: v2
+plugins:
+  - protoc_builtin: python
+    out: src/googleapis-gen
+  - protoc_builtin: pyi
+    out: src/googleapis-gen
+inputs:
+  - directory: google
