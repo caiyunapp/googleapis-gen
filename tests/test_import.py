@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 def test_import_viewport():
     from google.geo.type import (
         viewport_pb2 as google_dot_geo_dot_type_dot_viewport__pb2,
