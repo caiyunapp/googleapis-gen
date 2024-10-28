@@ -1,8 +1,16 @@
 version: v2
+
 plugins:
-  - protoc_builtin: python
-    out: src/googleapis-gen
-  - protoc_builtin: pyi
-    out: src/googleapis-gen
+  - remote: buf.build/grpc/python:v1.67.0
+    out: src/
+  - remote: buf.build/protocolbuffers/pyi:v28.3
+    out: src/
+  - remote: buf.build/protocolbuffers/python:v28.3
+    out: src/
 inputs:
   - directory: google
+    paths:
+      - google/type
+      - google/api/field_behavior.proto
+      - google/api/http.proto
+      - google/geo/type

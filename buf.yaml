@@ -9,4 +9,4 @@ breaking:
 
 modules:
   - name: github.com/caiyunapp/googleapis-gen
-    path: google
+    path: googleapis
