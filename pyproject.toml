@@ -1,10 +1,13 @@
 [project]
 name = "googleapis-gen"
-version = "0.1.1"
+version = "0.1.2"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "protobuf>=5.28.3",
-]
+dependencies = ["protobuf>=5.28.3"]
 license = "Apache-2.0"
+
+maintainers = [
+    { name = "caiyunapp", email = "oss@caiyunapp.com" },
+    { name = "ringsaturn", email = "ringsaturn.me@gmail.com" },
+]
