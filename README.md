@@ -26,10 +26,11 @@ Google does not provide a Python package for the `googleapis` repository. And we
 only need a few subset of the whole proto files in the `googleapis` repository.
 That's why we created this package.
 
-Please be aware that, this package **won't** provide a full feature like Go's.
+Please be aware that:
 
-Because of the lack of resources, we can only support the latest 2 versions of
-Python.
+- this package **won't** provide full feature like Go's.
+- because of the lack of resources, we can only support the latest 2 versions of
+  Python.
 
 ## LICENSE
 
