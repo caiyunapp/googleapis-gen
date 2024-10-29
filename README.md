@@ -11,13 +11,27 @@
 > The generated files are under the `google` namespace, to work with other
 > generated codes.
 
-Install:
+### Install
 
 ```bash
 pip install googleapis-gen
 ```
 
-LICENSE:
+## Background
+
+We have a few projects that depend on the `googleapis` repository in Python.
+Unlike Go where people could use
+[`google.golang.org/genproto/googleapis`](https://pkg.go.dev/google.golang.org/genproto/googleapis),
+Google does not provide a Python package for the `googleapis` repository. And we
+only need a few subset of the whole proto files in the `googleapis` repository.
+That's why we created this package.
+
+Please be aware that, this package **won't** provide a full feature like Go's.
+
+Because of the lack of resources, we can only support the latest 2 versions of
+Python.
+
+## LICENSE
 
 - [Apache License 2.0](./LICENSE)
 - Upstream:
